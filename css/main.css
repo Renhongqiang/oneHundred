@@ -34,6 +34,43 @@
 .NumBt {
     position: relative;
     margin: 5px auto;
+    font-size: 20px;
     width: 160px;
     height: 60px;
 }
+.NumBt1 {
+    position: relative;
+    margin: 5px auto;
+    width: 160px;
+    height: 60px;
+}
+#btClear {
+    width: 325px;
+    background: rgb(100, 102, 238);
+    color: red;
+    font-family: '黑体';
+    font-size: 20px;
+}
+#btCal {
+    background: rgb(240, 196, 52);
+    font-family: '黑体';
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

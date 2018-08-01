@@ -12,19 +12,30 @@
 
     <div class="container ">
         <h1 id="T1">Calcuator of Ren's 100 days code</h1><br>
-        <input id="output" type="text" value="0">
+        <input id="output" type="text" readonly="readonly" value="0">
         <div id="DivBtn">
+            <input class="NumBt1"  id="btClear" onclick="Backspace()"  type="button" value="←">
+            <input class="NumBt1"  id="btClear" onclick="ClearOutput()"  type="button" value="C">
+            <br>
             <input class="NumBt"  id="bt1"  type="button" value="1">
             <input class="NumBt"  id="bt2"  type="button" value="2">
             <input class="NumBt"  id="bt3"  type="button" value="3">
+            <input class="NumBt1"  id="btCal" onclick="Add()"  type="button" value="+">
             <br>
             <input class="NumBt"  id="bt4"  type="button" value="4">
             <input class="NumBt"  id="bt5"  type="button" value="5">
             <input class="NumBt"  id="bt6"  type="button" value="6">
+            <input class="NumBt1"  id="btCal" onclick="Reduce()"  type="button" value="-">
             <br>
             <input class="NumBt"  id="bt7"  type="button" value="7">
             <input class="NumBt"  id="bt8"  type="button" value="8">
             <input class="NumBt"  id="bt9"  type="button" value="9">
+            <input class="NumBt1"  id="btCal" onclick="Ride()"  type="button" value="X">
+            <br>
+            <input class="NumBt"  id="bt0"  type="button" value="0">
+            <input class="NumBt"  id="btPpoint"  type="button" value=".">
+            <input class="NumBt1"  id="btCal" onclick="equal()"  type="button" value="=">
+            <input class="NumBt1"  id="btCal" onclick="Except()"  type="button" value="/">
         </div>
         
     </div>
