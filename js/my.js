@@ -9,17 +9,16 @@ var doc = 0;//表示正在做的运算
 window.onload = function(){
     var arr = document.getElementsByClassName('NumBt');
     for(var i = 0;i<arr.length;i++){
-        
-        
         arr[i].onclick = function(){
             if(cal == 1){
-                num = 0;
+                //num = 0;
                 cal = 0;
                 f = 0;
             }
             if(f==0){
                 num = this.value;
                 f=1;
+                //alert(num);
             } else {
                 num = num + this.value;
             } 
@@ -35,6 +34,16 @@ window.onload = function(){
     f = 0;
     doc = 0;
  }
+//退格
+ function Backspace(){
+	if(output.value == "0" || output.value == ""){
+        output.value = "0";
+        num = output.value;
+	}else{
+        document.getElementById("output").value=document.getElementById("output").value.slice(0,-1);
+        num = output.value;
+	}
+}
 
  //加
  function Add(){
@@ -99,6 +108,7 @@ function Except(){
             result = num;
         }else {
             result = Number(num) * Number(result);
+            
         }
     }
     if(doc == 4){
@@ -110,5 +120,6 @@ function Except(){
     }
     
     output.value = result;
+    doc = 0;
     num = 0;
  }
